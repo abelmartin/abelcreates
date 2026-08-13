@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby file: ".ruby-version"
+ruby "~> 3.3"
 
 # Core Jekyll
 gem "jekyll", "~> 4.3.4"
