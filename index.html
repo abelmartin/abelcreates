@@ -15,11 +15,12 @@ title: Home
   </h1>
 
   <p class="hero-description">
-    Welcome to <strong>abelcreates.com</strong>. I'm Abel—a software engineer and creator focused on building modern web applications, distributed systems, and delightful digital tools.
+    Welcome to <strong>abelcreates.com</strong>. I'm Abel, a software engineer with over <b>21 years</b> of experience
+    building modern web applications, distributed systems, and delightful digital tools. 😄
   </p>
 
   <div class="hero-actions">
-    <a href="#projects" class="btn btn-primary">Explore Work</a>
+    <a href="#projects" class="btn btn-primary">Explore My Work</a>
     <a href="{{ '/about/' | relative_url }}" class="btn btn-secondary">About Me</a>
   </div>
 </section>
@@ -34,7 +35,8 @@ title: Home
     <a href="https://www.yulascan.com" target="_blank" rel="noopener noreferrer" class="card">
       <div class="card-top-row">
         <span class="card-tag">Product</span>
-        <svg class="external-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg class="external-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
           <polyline points="15 3 21 3 21 9"></polyline>
           <line x1="10" y1="14" x2="21" y2="3"></line>
@@ -51,14 +53,16 @@ title: Home
     <a href="https://www.careerhelix.com" target="_blank" rel="noopener noreferrer" class="card">
       <div class="card-top-row">
         <span class="card-tag">Platform</span>
-        <svg class="external-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg class="external-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
           <polyline points="15 3 21 3 21 9"></polyline>
           <line x1="10" y1="14" x2="21" y2="3"></line>
         </svg>
       </div>
       <h3 class="card-title">Career Helix</h3>
-      <p class="card-desc">Intelligent career development and resume optimization platform empowering modern job seekers.</p>
+      <p class="card-desc">Intelligent career development and resume optimization platform empowering modern job
+        seekers.</p>
       <div class="card-meta">
         <span>careerhelix.com</span>
         <span>Visit &rarr;</span>
@@ -68,14 +72,16 @@ title: Home
     <a href="https://pokequiz.abelcreates.com" target="_blank" rel="noopener noreferrer" class="card">
       <div class="card-top-row">
         <span class="card-tag">Game & App</span>
-        <svg class="external-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg class="external-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
           <polyline points="15 3 21 3 21 9"></polyline>
           <line x1="10" y1="14" x2="21" y2="3"></line>
         </svg>
       </div>
       <h3 class="card-title">Poké Quiz</h3>
-      <p class="card-desc">Interactive, fast-paced trivia and silhouette challenge testing your Pokémon master knowledge.</p>
+      <p class="card-desc">Interactive, fast-paced trivia and silhouette challenge testing your Pokémon master
+        knowledge.</p>
       <div class="card-meta">
         <span>pokequiz.abelcreates.com</span>
         <span>Play Now &rarr;</span>
@@ -92,19 +98,19 @@ title: Home
 
   <div class="post-list">
     {% for post in site.posts limit: 5 %}
-      <a href="{{ post.url | relative_url }}" class="post-row">
-        <div class="post-row-info">
-          <div class="post-row-title">{{ post.title }}</div>
-          {% if post.description %}
-            <div class="post-row-desc">{{ post.description }}</div>
-          {% endif %}
-        </div>
-        <div class="post-row-date">{{ post.date | date: "%b %d, %Y" }}</div>
-      </a>
-    {% else %}
-      <div class="card">
-        <p class="card-desc">Articles coming soon! Stay tuned.</p>
+    <a href="{{ post.url | relative_url }}" class="post-row">
+      <div class="post-row-info">
+        <div class="post-row-title">{{ post.title }}</div>
+        {% if post.description %}
+        <div class="post-row-desc">{{ post.description }}</div>
+        {% endif %}
       </div>
+      <div class="post-row-date">{{ post.date | date: "%b %d, %Y" }}</div>
+    </a>
+    {% else %}
+    <div class="card">
+      <p class="card-desc">Articles coming soon! Stay tuned.</p>
+    </div>
     {% endfor %}
   </div>
 </section>
