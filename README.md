@@ -41,32 +41,3 @@ tags: [ruby, jekyll]
 
 Your post content here in Markdown...
 ```
-
----
-
-## 🌐 Custom Domain & GitHub Pages Setup
-
-### 1. GitHub Repository Settings
-1. Go to your GitHub repository **Settings** > **Pages**.
-2. Under **Build and deployment > Source**, select **GitHub Actions**.
-3. Under **Custom domain**, ensure `abelcreates.com` is set (the `CNAME` file in the repo provides this automatically).
-4. Check **Enforce HTTPS** (once DNS records propagate).
-
-### 2. DNS Records for `abelcreates.com`
-Configure the following DNS records with your domain registrar:
-
-| Type | Host / Name | Target / Value |
-| :--- | :--- | :--- |
-| **A** | `@` | `185.199.108.153` |
-| **A** | `@` | `185.199.109.153` |
-| **A** | `@` | `185.199.110.153` |
-| **A** | `@` | `185.199.111.153` |
-| **CNAME** | `www` | `<your-github-username>.github.io.` |
-
----
-
-## 🚢 Automated Deployment
-
-Every push to `main` triggers `.github/workflows/deploy.yml`, which:
-1. Bundles dependencies and compiles Jekyll into `_site/`.
-2. Packages and deploys directly to GitHub Pages.
