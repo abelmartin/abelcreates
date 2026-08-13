@@ -4,24 +4,34 @@ title: Home
 ---
 
 <section class="hero-section" id="hero">
-  <div class="hero-badge">
-    <span class="hero-badge-pulse"></span>
-    Available for new ideas & projects
-  </div>
+  <div class="hero-layout">
+    <div class="hero-text">
+      <div class="hero-badge">
+        <span class="hero-badge-pulse"></span>
+        Available for new ideas & projects
+      </div>
 
-  <h1 class="hero-title">
-    Crafting software, <br>
-    <span class="gradient-text">ideas, and digital crafts.</span>
-  </h1>
+      <h1 class="hero-title">
+        Crafting software, <br>
+        <span class="gradient-text">ideas, and digital crafts.</span>
+      </h1>
 
-  <p class="hero-description">
-    Welcome to <strong>abelcreates.com</strong>. I'm Abel, a software engineer with over <b>21 years</b> of experience
-    building modern web applications, distributed systems, and delightful digital tools. 😄
-  </p>
+      <p class="hero-description">
+        Welcome to <strong>abelcreates.com</strong>. I'm Abel, a software engineer with over <b>21 years</b> of experience
+        building modern web applications, distributed systems, and delightful digital tools. 😄
+      </p>
 
-  <div class="hero-actions">
-    <a href="#projects" class="btn btn-primary">Explore My Work</a>
-    <a href="{{ '/about/' | relative_url }}" class="btn btn-secondary">About Me</a>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">Explore My Work</a>
+        <a href="{{ '/about/' | relative_url }}" class="btn btn-secondary">About Me</a>
+      </div>
+    </div>
+
+    <div class="hero-media">
+      <div class="hero-avatar-wrapper">
+        <img src="{{ '/assets/images/avatar.jpg' | relative_url }}" alt="Abel" class="hero-avatar" width="220" height="220">
+      </div>
+    </div>
   </div>
 </section>
 
