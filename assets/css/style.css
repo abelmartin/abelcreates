@@ -309,6 +309,27 @@ body.site-body {
   transform: translateY(-4px);
 }
 
+.card-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.card-top-row .card-tag {
+  margin-bottom: 0;
+}
+
+.card-top-row .external-icon {
+  color: var(--text-muted);
+  transition: var(--transition);
+}
+
+.card:hover .card-top-row .external-icon {
+  color: var(--text-accent);
+  transform: translate(2px, -2px);
+}
+
 .card-tag {
   display: inline-block;
   align-self: flex-start;

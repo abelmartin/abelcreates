@@ -1,12 +1,12 @@
 # Site settings
 title: Abel Creates
-tagline: Developer, Creator & Problem Solver
+tagline: Always ready, willing, and... 😏
 description: Personal website, portfolio, and writings by Abel.
 url: "https://abelcreates.com"
 baseurl: ""
 
 author:
-  name: Abel
+  name: Abel Martin
   bio: Building delightful digital experiences, software, and creative tools.
   github: abel
   twitter: abelcreates
