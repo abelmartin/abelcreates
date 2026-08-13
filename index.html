@@ -1,0 +1,86 @@
+---
+layout: default
+title: Home
+---
+
+<section class="hero-section" id="hero">
+  <div class="hero-badge">
+    <span class="hero-badge-pulse"></span>
+    Available for new ideas & projects
+  </div>
+
+  <h1 class="hero-title">
+    Crafting software, <br>
+    <span class="gradient-text">ideas, and digital crafts.</span>
+  </h1>
+
+  <p class="hero-description">
+    Welcome to <strong>abelcreates.com</strong>. I'm Abel—a software engineer and creator focused on building modern web applications, distributed systems, and delightful digital tools.
+  </p>
+
+  <div class="hero-actions">
+    <a href="#projects" class="btn btn-primary">Explore Work</a>
+    <a href="{{ '/about/' | relative_url }}" class="btn btn-secondary">About Me</a>
+  </div>
+</section>
+
+<section class="section-block" id="projects">
+  <div class="section-header">
+    <h2 class="section-title">Featured Highlights</h2>
+    <span class="section-subtitle">What I'm building & exploring</span>
+  </div>
+
+  <div class="cards-grid">
+    <div class="card">
+      <span class="card-tag">Engineering</span>
+      <h3 class="card-title">Full-Stack Web & APIs</h3>
+      <p class="card-desc">Architecting performant web backends, responsive client apps, and intuitive developer experiences.</p>
+      <div class="card-meta">
+        <span>Ruby • Python • TypeScript</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="card-tag">Cloud & DevOps</span>
+      <h3 class="card-title">Cloud Infrastructure</h3>
+      <p class="card-desc">Automated CI/CD workflows, containerization with Docker, and resilient cloud deployments on GCP and modern hosting.</p>
+      <div class="card-meta">
+        <span>GCP • Docker • GitHub Actions</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="card-tag">Creations</span>
+      <h3 class="card-title">Creative Coding & Tools</h3>
+      <p class="card-desc">Interactive prototypes, games, experiments, and developer utilities designed to make life easier and more fun.</p>
+      <div class="card-meta">
+        <span>Experiments • Open Source</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-block" id="writing">
+  <div class="section-header">
+    <h2 class="section-title">Recent Writings</h2>
+    <span class="section-subtitle">Thoughts, notes, and technical writeups</span>
+  </div>
+
+  <div class="post-list">
+    {% for post in site.posts limit: 5 %}
+      <a href="{{ post.url | relative_url }}" class="post-row">
+        <div class="post-row-info">
+          <div class="post-row-title">{{ post.title }}</div>
+          {% if post.description %}
+            <div class="post-row-desc">{{ post.description }}</div>
+          {% endif %}
+        </div>
+        <div class="post-row-date">{{ post.date | date: "%b %d, %Y" }}</div>
+      </a>
+    {% else %}
+      <div class="card">
+        <p class="card-desc">Articles coming soon! Stay tuned.</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>

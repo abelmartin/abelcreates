@@ -1,0 +1,42 @@
+# Site settings
+title: Abel Creates
+tagline: Developer, Creator & Problem Solver
+description: Personal website, portfolio, and writings by Abel.
+url: "https://abelcreates.com"
+baseurl: ""
+
+author:
+  name: Abel
+  bio: Building delightful digital experiences, software, and creative tools.
+  github: abel
+  twitter: abelcreates
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+# Permalink structure
+permalink: /posts/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .bundle
+  - .sass-cache
+  - .jekyll-cache
+  - README.md
+  - LICENSE
