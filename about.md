@@ -25,6 +25,7 @@ permalink: /about/
 - **Systems & Cloud Architecture**: Deploying scalable services with Docker, cloud providers (like GCP), and continuous deployment pipelines.
 - **Creative Projects**: Experimenting with new technologies, automation scripts, and interactive tools.
 - **AI / LLMs / ML**: Always learning and experimenting with new technologies and techniques. Yula Scan is an example of this, using both open source and & my own proprietary model with over 20,000 EULAs as it's starting corpus.
+
 ---
 
 ### About This Site
