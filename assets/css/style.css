@@ -556,6 +556,36 @@ body.site-body {
   color: #e2e8f0;
 }
 
+.prose .footnotes {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.prose .footnotes ol {
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+}
+
+.prose .footnotes li {
+  margin-bottom: 0.5rem;
+}
+
+.prose .footnote {
+  color: var(--text-heading);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0 0.15rem;
+}
+
+.prose .reversefootnote {
+  color: var(--text-heading);
+  text-decoration: none;
+  margin-left: 0.35rem;
+}
+
 /* Post and Page Container Layouts */
 .post-container, .page-container {
   max-width: 760px;
